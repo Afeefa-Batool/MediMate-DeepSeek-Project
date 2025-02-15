@@ -255,7 +255,11 @@
 
 import { useState, useEffect, useRef, KeyboardEvent } from "react";
 import { getAIMLResponse } from "../services/DeepseekService";
-
+import Image from 'next/image';
+import icon1 from '../images/diet.png';
+import icon2 from '../images/diagnosis.png';
+import icon3 from '../images/elderly.png';
+import icon4 from '../images/healthcare.png';
 interface ChatMessage {
   role: "user" | "assistant";
   content: string;
@@ -404,68 +408,31 @@ export default function AIMLChat() {
         {/* A container to control max-width */}
         <div className="flex w-full max-w-7xl">
           {/* Sidebar with some margin from the chatbot */}
-          <div className="h-[80vh] w-20 bg-gray-800 text-white
+          <div className="h-[84vh] w-20 bg-gray-800 text-white
                           flex flex-col items-center py-6 space-y-8
                           mr-8 rounded-2xl shadow-lg">
             {/* Example sidebar icons */}
-            <a href="/" className="hover:text-gray-300">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 9.75L12 4l9 5.75M21 12v6a2 2 0 01-2 2h-4m-8 0H5a2 2 0 01-2-2v-6m16 0L12 15 5 12"
-                />
-              </svg>
+            <a href="https://huggingface.co/spaces/Sameer747/MediMateAIAgent" className="hover:text-gray-300">
+             
+                <Image src={icon1} alt="Icon" className="w-14 h-14" />
             </a>
-            <a href="/chat" className="hover:text-gray-300">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                />
-              </svg>
+            <p>Diet</p>
+            <a href="https://huggingface.co/spaces/Sameer747/MediMateAIAgentWomensHealth" className="hover:text-gray-300">
+            <Image src={icon2} alt="Icon" className="w-14 h-14" />
             </a>
-            <a href="/settings" className="hover:text-gray-300">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0a1.72 1.72 0 001.29 1.16 1.72 1.72 0 012.132 1.88c.052.324.073.65.073.975 0 .325-.021.65-.073.975a1.72 1.72 0 01-2.132 1.88 1.72 1.72 0 00-1.29 1.16c-.3.921-1.603.921-1.902 0a1.72 1.72 0 00-1.29-1.16 1.72 1.72 0 01-2.132-1.88c-.052-.324-.073-.65-.073-.975 0-.325.021-.65.073-.975a1.72 1.72 0 012.132-1.88 1.72 1.72 0 001.29-1.16z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-              </svg>
+            <p>Women</p>
+            <a href="https://huggingface.co/spaces/Sameer747/MediMateAIAgentElderly" className="hover:text-gray-300">
+            <Image src={icon3} alt="Icon" className="w-14 h-14" />
             </a>
+            <p>Elders</p>
+            <a href="https://huggingface.co/spaces/Sameer747/MediMateAIAgentChildHealthAndGrowth" className="hover:text-gray-300">
+            <Image src={icon4} alt="Icon" className="w-14 h-14" />
+            </a>
+            <p>Kids</p>
           </div>
 
           {/* Chat Container */}
-          <div className="flex-1 h-[80vh] bg-white dark:bg-slate-900
+          <div className="flex-1 h-[84vh] bg-white dark:bg-slate-900
                           rounded-3xl shadow-2xl ring-1 ring-slate-900/10
                           overflow-hidden flex flex-col">
             {/* Top Bar: heading centered */}
