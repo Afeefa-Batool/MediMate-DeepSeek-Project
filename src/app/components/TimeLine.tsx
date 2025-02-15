@@ -1,12 +1,12 @@
 
 import Image from "next/image";
 import React from "react";
-import umbrella from "../images/umbrella.png";
-import plane from "../images/plane.png";
-import ship from "../images/ship.png";
-import slope from "../images/slope.png";
-import fire from "../images/fire.png";
-import ball from "../images/ball.png";
+import umbrella from "../images/freelancer.png";
+import plane from "../images/doctor.png";
+import ship from "../images/laptop.png";
+import slope from "../images/medical-team.png";
+import fire from "../images/syringe.png";
+import ball from "../images/diagnosis.png";
 
 export default function Timeline() {
   const timelineData = [

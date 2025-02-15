@@ -5,7 +5,7 @@ import PromoCard from "./components/PromoCard";
 import CardSection from "./components/CardSection";
 import Timeline from "./components/TimeLine";
 import Footer from "./components/Footer";
-import DeepSeekChat from "./components/DeepSeekChat";
+
 // import Login from "./pages/Login"
 // const products = [
 //   {
@@ -50,7 +50,7 @@ import DeepSeekChat from "./components/DeepSeekChat";
 export default function Home() {
   return (
     <>
-<DeepSeekChat/>
+
     <Banner/>
     <InfoCard/>
     <PromoCard/>

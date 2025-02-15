@@ -105,7 +105,7 @@
 'use client'; // Add this directive at the top of the file
 
 import Link from "next/link";
-import logo from '../images/logo.png';
+import logo from '../images/medimate-logo.gif';
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -117,15 +117,15 @@ export default function Banner() {
   };
 
   return (
-    <div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/images/banner.png')" }}>
-      <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+    <div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/images/3.jpg')" }}>
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
         {/* Navbar */}
         <div className="absolute top-6 left-8 right-8 flex items-center justify-between">
           {/* Logo */}
           <div className="text-xl font-bold flex items-center space-x-2">
-            <Image src={logo} className="h-8" alt="Hero" width={150} height={100} />
+            <Image src={logo}  alt="Hero" width={190} height={100} />
           </div>
 
           {/* Hamburger Menu for Mobile */}
@@ -246,16 +246,14 @@ export default function Banner() {
         </div>
 
         {/* Banner Content */}
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-          Lorem Ipsum Dolor Sit Amet
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+        Your AI-Powered Health Companion
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Fusce eget
-          sapien in metus interdum dignissim. Sed non turpis nec justo bibendum
-          fermentum.
+        Get instant medical guidance with our AI assistant. Whether you need quick answers, health advice, or support, our smart AI is here to assist you 24/7. Start your conversation now and take control of your well-being! 
         </p>
-        <Link href="/signup" className="mt-6 w-[250px] h-[48px] px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg">
-          Sign up
+        <Link href="/assistant" className="mt-6 w-[250px] h-[48px] px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg">
+        Ask AI Assistant
         </Link>
       </div>
     </div>

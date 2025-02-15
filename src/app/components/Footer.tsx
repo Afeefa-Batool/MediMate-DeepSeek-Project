@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import footer from '../images/footer.png'
+import footer from '../images/5.jpg'
 const Footer = () => {
   return (
-    <footer className="relative text-white py-12">
+    <footer className="relative text-black py-12">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -50,7 +50,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded"
+                className="bg-blue-500 hover:bg-blue-600 text-black p-2 rounded"
               >
                 Subscribe
               </button>
