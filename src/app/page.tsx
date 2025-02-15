@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Banner from "./components/Banner";
 import InfoCard from "./components/InfoCard";
 import PromoCard from "./components/PromoCard";

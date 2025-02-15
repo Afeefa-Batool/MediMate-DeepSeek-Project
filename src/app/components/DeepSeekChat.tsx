@@ -256,6 +256,8 @@
 import { useState, useEffect, useRef, KeyboardEvent } from "react";
 import { getAIMLResponse } from "../services/DeepseekService";
 import Image from 'next/image';
+
+import Link from "next/link";
 import icon1 from '../images/diet.png';
 import icon2 from '../images/diagnosis.png';
 import icon3 from '../images/elderly.png';
@@ -382,7 +384,7 @@ export default function AIMLChat() {
     // Parent container with relative positioning for the absolute back button
     <div className="relative min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
       {/* Back button in the very top-left corner (outside the chat container) */}
-      <a
+      <Link
         href="/"
         className="absolute top-4 left-4 inline-flex items-center
                    rounded-full border-2 border-white p-2 text-white
@@ -399,7 +401,7 @@ export default function AIMLChat() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
         <span className="ml-2 hidden sm:inline">Back</span>
-      </a>
+      </Link>
       <br />
       <br /><br />
 
@@ -412,22 +414,22 @@ export default function AIMLChat() {
                           flex flex-col items-center py-6 space-y-8
                           mr-8 rounded-2xl shadow-lg">
             {/* Example sidebar icons */}
-            <a href="https://huggingface.co/spaces/Sameer747/MediMateAIAgent" className="hover:text-gray-300">
+            <Link href="https://huggingface.co/spaces/Sameer747/MediMateAIAgent" className="hover:text-gray-300">
              
                 <Image src={icon1} alt="Icon" className="w-14 h-14" />
-            </a>
+            </Link>
             <p>Diet</p>
-            <a href="https://huggingface.co/spaces/Sameer747/MediMateAIAgentWomensHealth" className="hover:text-gray-300">
+            <Link href="https://huggingface.co/spaces/Sameer747/MediMateAIAgentWomensHealth" className="hover:text-gray-300">
             <Image src={icon2} alt="Icon" className="w-14 h-14" />
-            </a>
+            </Link>
             <p>Women</p>
-            <a href="https://huggingface.co/spaces/Sameer747/MediMateAIAgentElderly" className="hover:text-gray-300">
+            <Link href="https://huggingface.co/spaces/Sameer747/MediMateAIAgentElderly" className="hover:text-gray-300">
             <Image src={icon3} alt="Icon" className="w-14 h-14" />
-            </a>
+            </Link>
             <p>Elders</p>
-            <a href="https://huggingface.co/spaces/Sameer747/MediMateAIAgentChildHealthAndGrowth" className="hover:text-gray-300">
+            <Link href="https://huggingface.co/spaces/Sameer747/MediMateAIAgentChildHealthAndGrowth" className="hover:text-gray-300">
             <Image src={icon4} alt="Icon" className="w-14 h-14" />
-            </a>
+            </Link>
             <p>Kids</p>
           </div>
 

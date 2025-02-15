@@ -3,10 +3,10 @@
 const API_KEY: string | undefined = process.env.NEXT_PUBLIC_AIML_API_KEY;
 const BASE_URL: string = "https://api.aimlapi.com/v1/chat/completions";
 
-interface Message {
-  role: "user" | "assistant" | "system";
-  content: string;
-}
+// interface Message {
+//   role: "user" | "assistant" | "system";
+//   content: string;
+// }
 
 export const getAIMLResponse = async (
   userMessage: string,
