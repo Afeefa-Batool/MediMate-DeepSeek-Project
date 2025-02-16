@@ -63,26 +63,37 @@ MediMate is a smart health management platform that enables users to track their
   <img src="img4.jpg" alt="Medicine Reminders" width="45%"/>
   <img src="img5.jpg" alt="Emergency Alerts" width="45%"/>
 </p>
+<p align="center">
+  <img src="img6.jpg" alt="Medicine Reminders" width="45%"/>
 
+</p>
 ---
 
-## 🔗 Download the App
+## 🔗 Visit our App
 
 | Platform | Link |
 |----------|------|
-| 📱 **Android** | [Download on Play Store](https://play.google.com/store/apps/details?id=medimate) |
-| 🍏 **iOS** | [Download on App Store](https://apps.apple.com/app/medimate) |
-| 🌍 **Web App** | [Visit Online](https://medimate.com) |
+| 📱 **Hugging Face** |(https://huggingface.co/spaces/Sameer747/MediMateAIAgent) |
+| 🍏 **Full Stack App** | (https://apps.apple.com/app/medimate) |
+| 🌍 **Web App** | (https://medi-mate-deep-seek-project-e6ciuj4iy-afeefabatools-projects.vercel.app/) |
 
 ---
 
-## 💻 Technologies Used
+## Technologies Used
 
-- **Frontend**: React.js, Next.js
-- **Backend**: Node.js, Firebase
-- **Database**: MongoDB
-- **APIs**: Google Maps API (for Hospital Locator)
-- **Deployment**: Vercel, AWS
+- AI / ML API  
+  - DeepSeek R1 Model  
+  - DeepSeek V3 API  
+  - Groq LLaMA-3.3-70B-Versatile API  
+  - Hugging Face  
+  - Gradio  
+- Frontend  
+  - Next.js  
+  - TypeScript  
+  - Tailwind CSS  
+- Backend  
+  - Java Spring Boot  
+
 
 ---
 
@@ -92,16 +103,16 @@ To run this project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/medimate.git
+git clone https://github.com/Afeefa-Batool/MediMate-DeepSeek-Project
 
 # Navigate to the project directory
-cd medimate
+cd MediMate-DeepSeek-Project
 
 # Install dependencies
 npm install
 
 # Start the development server
-npm start
+npm run dev
 ```
 
 Visit `http://localhost:3000` in your browser to view the website.
