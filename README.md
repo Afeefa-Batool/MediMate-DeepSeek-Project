@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img src="public/images/1jpg" alt="MediMate Overview" width="20%"/>
+  <img src="images/1jpg" alt="MediMate Overview" width="20%"/>
 </p>
 
 # MediMate 🏥
