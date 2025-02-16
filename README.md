@@ -54,12 +54,12 @@ MediMate is a smart health management platform that enables users to track their
 ### Featured Screenshots
 
 <p align="center">
-  <img src="screenshot1.png" alt="Dashboard" width="45%"/>
-  <img src="screenshot2.png" alt="Appointment Booking" width="45%"/>
+  <img src="img2.jpg" alt="Dashboard" width="45%"/>
+  <img src="img3.jpg" alt="Appointment Booking" width="45%"/>
 </p>
 
 <p align="center">
-  <img src="screenshot3.png" alt="Medicine Reminders" width="45%"/>
+  <img src="img4.jpg" alt="Medicine Reminders" width="45%"/>
   <img src="screenshot4.png" alt="Emergency Alerts" width="45%"/>
 </p>
 
